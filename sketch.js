@@ -82,14 +82,14 @@ function colisaoRaqueteOponenteBiblioteca() {
     colidiu = collideRectCircle(xRaqueteOponente, yRaqueteOponente, raqueteLargura, raqueteAltura, xBolinha, yBolinha, raio);
     if (colidiu){
         velocidadeXBolinha *= -1;
-        //raquetada.play();
+        raquetada.play();
     }
 }
 function verificaColisaoRaquete(x, y) {
     colidiu = collideRectCircle(x, y, raqueteLargura, raqueteAltura, xBolinha, yBolinha, raio);
     if (colidiu){
         velocidadeXBolinha *= -1;
-       // raquetada.play();
+        raquetada.play();
     }
 }  
 function incluirPlacar() {
@@ -108,16 +108,16 @@ function incluirPlacar() {
 function marcaPonto() {
     if (xBolinha > 590) {
         meusPontos += 1;
-  //    ponto.play();
+      ponto.play();
     }
     if (xBolinha < 10) {
         pontosDoOponente += 1;
-    //  ponto.play();
+      ponto.play();
     }
 }
-//function preload() {
-  //  ponto = loadSound("ponto.mp3");
-    //raquetada = loadSound("raquetada.mp3");
+function preload() {
+    ponto = loadSound("ponto.mp3");
+    raquetada = loadSound("raquetada.mp3");
 }
 
 
