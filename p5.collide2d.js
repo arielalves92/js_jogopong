@@ -8,7 +8,6 @@ CC BY-NC-SA 4.0
 
 
 
-
 p5.prototype._collideDebug = false;
 
 p5.prototype.collideDebug = function(debugMode){
